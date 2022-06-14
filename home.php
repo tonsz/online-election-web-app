@@ -30,10 +30,10 @@
                        <a href="voter_log.php">Voter</a>
                   </li>
                   <li>
-                       <a href="#">Help</a>
+                       <a id="help" href="help.php">Help</a>
                   </li>
                   <li>
-                       <a href="#">Contact Us</a>
+                       <a id="contact" href="contact.php">Contact Us</a>
                   </li>
              </ul>
         </div>
