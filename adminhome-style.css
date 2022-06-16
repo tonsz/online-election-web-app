@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+:root {
+    --dark-blue: #1b2459;
+    --light-gray: #e2e3eb;
+    --white: #ffffff;
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 780px;
+    --mobile: 480px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("./imgs/bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* top most nav styling */
+.top {
+    min-width: 100%;
+    font-weight: 900;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--dark-blue);
+    background-color: var(--light-gray);
+}
+
+.title {
+    font-size: 1.8rem;
+    padding: 20px 0px 20px 40px;
+    background-color: var(--light-gray);
+    margin-right: auto;
+}
+
+.start .greet { 
+    padding: 25px 40px 25px 40px;
+    background-color: var(--dark-blue);  
+    color: var(--light-gray);
+}
+
+
+
+
+
+/* main nav styling */
+.main-nav {
+    background-color: var(--white);
+    padding: 10px 0px 10px 60px;
+
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 75vh;
+}
+
+.menu li {
+    
+    position: relative;
+    list-style: none;
+    
+}
+
+.menu li a {
+    color: var(--dark-blue);
+    border: 10px solid transparent;
+    
+}
+
+.menu li a:hover {
+    background-color: var(--light-gray);
+    border-color: var(--light-gray);
+}
+
+/* home text */
+
+.container {
+    margin: 30px auto auto 40px;
+    max-width: 480px;
+}
+
+.container .vote {
+    font-family: "DM Sans Serif", "sans-serif";
+    letter-spacing: 5px;
+    font-size: 5.5em;
+    letter-spacing: 2px;
+    line-height: 0.95;
+    color: var(--dark-blue);
+}
+
+.container p {
+    max-width: 440px;
+    text-align: justify;
+    margin: 20px auto 20px 0px;
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+.container .create-btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: var(--dark-blue);
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    line-height: 25px;
+}
+
+/* for smaller screens sana ito */
+
+@media only screen and (max-width: 780px) {
+        .title {
+            font-size: 14px;
+           
+        }
+        .start a {
+            font-size: 14px;
+        }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    body {
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+        flex-direction: column;
+       
+    }
+    .title {
+       margin: 0;
+       padding: 10px 25px 20px 0px; 
+    }  
+
+    .start {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .start .log-in {
+        padding: 0;
+    }
+    
+
+    .start .reg {
+        padding: 0;
+        color: var(--dark-blue);
+        background-color: var(--light-gray);
+    }
+    
+}
