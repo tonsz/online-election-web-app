@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+:root {
+    --dark-blue: #1b2459;
+    --light-gray: #e2e3eb;
+    --white: #ffffff;
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 780px;
+    --mobile: 480px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+        background-image:url(imgs/registration-bg.PNG);
+        background-position:center;
+        background-attachment: fixed;
+        background-size:100% 100%;
+        height: 100vh;
+        font-family: "DM Sans", sans-serif;
+        display: flex;
+        flex-direction: column;
+        position:relative;
+}
+
+
+.title {
+        font-size: 1.8rem;
+        padding: 20px 0px 20px 40px;
+        margin-right: auto;
+        color: var(--dark-blue);
+        font-weight: 900;
+}
+
+.container {
+        margin: 30px auto auto 40px;
+        max-width: 480px;
+
+    }
+    
+    .container .vote {
+        font-family: "DM Sans Serif", "sans-serif";
+        letter-spacing: 5px;
+        font-size: 5.5em;
+        letter-spacing: 2px;
+        line-height: 0.95;
+        color: var(--dark-blue);
+    }
+    
+    .container p {
+        max-width: 440px;
+        text-align: justify;
+        margin: 20px auto 20px 0px;
+        line-height: 1.5;
+        word-spacing: 2px;
+    }
+
+.infos {
+        position: absolute;
+        width: 1300px;
+        height: 100px;
+        margin-right: auto;
+        font-size: 18px;
+        padding: 130px 0px 0px 700px;    
+}
+
+
+
+.lastlabel{
+        margin-left: 172px;
+        text-align: right;
+}
+
+.firstname {
+        position: relative;
+        padding: 10px;
+        margin-top:10px;
+        border: none;
+        width:250px;
+        
+}
+
+.lastname {
+        position: relative;
+        margin-left:15px;
+        padding: 10px;
+        border: none;
+        width:250px;
+        
+}
+
+.email {
+        margin-top: 10px;
+        padding: 10px;
+        width:250px;
+        border: none;
+
+}
+
+.error {
+        position: absolute;
+        margin-top:3px;
+        margin-left: 3px;
+        color: red;
+        font-size: 13px;
+}
+
+.pwlabel{
+        position: absolute;
+}
+
+.password {
+        margin-top: 10px;
+        padding: 10px;
+        width: 250px;
+        border: none;
+}
+
+.button{
+        margin-left: 175px;
+        margin-top: 10px;
+        border-radius: 20%/60%;
+        display:block;
+        height: 50px;
+        width: 160px;
+        background-color: #1b2459;
+        border-color: #1b2459;
+        color: white;
+        font-size: 18px;
+}
+
+.account{
+        font-weight: 600px;
+        font-size:16px;
+        margin-left:10px;
+}
+
+.admin-radio{
+        margin-left: 35px;
+}
+
+input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -5px;
+        left: -3px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 5px solid white;
+    }
+
+input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -5px;
+        left: -3px;
+        position: relative;
+        background-color: #424b80;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 5px solid white;
+    }
+
+.success{
+        position: absolute;
+        color: green;
+        font-size: 15px;
+        position: center;
+        padding: 10px;
+        margin-left: 105px;
+        margin-bottom:10px;
+}
+
+.signin {
+        font-size:14px;
+        margin-top: 25px;
+        margin-left: 148px;
+        color: #1b2459;
+}
