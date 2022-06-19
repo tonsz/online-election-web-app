@@ -50,8 +50,8 @@
                Online Election System
            </div>     
            <div class="start">                                                                    
-               <a href="#"class="log-in">Log In</a> 
-               <a href="#" class="reg">Register</a>                                         
+                <a href="voter_log.php"class="log-in">Log In</a> 
+                <a href="registration.php" class="reg">Register</a>                                         
           </div>
         </div>
         <div class="main-nav">
