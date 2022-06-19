@@ -14,8 +14,8 @@
                Online Election System
            </div>     
            <div class="start">                                                                    
-               <a href="#"class="log-in">Log In</a> 
-               <a href="#" class="reg">Register</a>                                         
+               <a href="voter_log.php"class="log-in">Log In</a> 
+               <a href="registration.php" class="reg">Register</a>                                         
           </div>
         </div>
         <div class="main-nav">
@@ -36,6 +36,14 @@
                        <a id="contact" href="contact.php">Contact Us</a>
                   </li>
              </ul>
+        </div>
+
+        <div class="container">
+               <h2 class="vote">
+                    Every vote counts.
+               </h2>
+               <p> The Online Election System is a platform for institutions to conduct their own elections or voting event polls. Register, know your election ID and let your choice count. </p>
+               <a href="voter_log.php" class="vote-btn">VOTE NOW</a>
         </div>
      
         
